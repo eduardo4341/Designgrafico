@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página inicial</title>
+
+ <header>
+
+  <nav style="margin-top:20px; margin-left: 20px; font-size: 25px;">
+    <ul class="menu">
+  <li><a href="profissao.html" target="_blank">profissão</a></li>
+   <li><a href="trabalho.html" target="_blank">trabalho</a></li>
+   <li><a href="curiosidades.html" target="_blank">curiosidades</a></li>
+   <li><a href="area.html" target="_blank">area</a></li>
+   <li><a href="curso.html" target="_blank">curso</a></li>
+   <li><a href="contato.html" target="_blank">contato</a></li>
+   <li><a href="curriculo.html" target="_blank">curriculo</a></li>
+
+   <a href="area.html"></a>
+   <a href="curiosidade.html"></a>
+   <a href="contato.html"></a>
+   <a href="profissao.html"></a>
+   <a href="trabalho.html"></a>
+   <a href="curso.html"></a>
+   <a href="curriculo.html"></a>
+    </ul>
+  </nav>
+ </header>
+
+    
+    
+   
+  
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    :root{
+      --primary:#8b5e3c;
+      --secondary:#3b2f2f;
+      --bg:#f6efe9;
+      --text:#3b2f2f;
+      --white:#ffffff;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(135deg,#8b5e3c,#5c3b1e);
+      color:white;
+      text-align:center;
+      padding:60px 20px;
+    }
+
+    header h1{
+      font-size:2.5rem;
+      margin-bottom:10px;
+    }
+
+    main{
+      max-width:1000px;
+      margin:40px auto;
+      padding:20px;
+    }
+
+    section{
+      background:white;
+      padding:25px;
+      margin-bottom:20px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.08);
+      border-left:5px solid var(--primary);
+    }
+
+    h2{
+      color:var(--primary);
+      margin-bottom:15px;
+    }
+
+    h3{
+      margin-top:10px;
+      color:var(--secondary);
+    }
+
+    p{
+      margin-bottom:10px;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .checklist p{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin:5px 0;
+    }
+
+    input{
+      transform:scale(1.1);
+    }
+
+    footer{
+      text-align:center;
+      background:var(--secondary);
+      color:white;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    /* RESPONSIVO */
+    @media(max-width:768px){
+
+      header h1{
+        font-size:1.8rem;
+      }
+
+      main{
+        padding:15px;
+      }
+
+      section{
+        padding:18px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Currículo Profissional</h1>
+    <p>Modelo de apresentação pessoal e carreira</p>
+  </header>
+
+  <main>
+
+    <!-- DADOS PESSOAIS -->
+    <section>
+      <h2>Dados Pessoais</h2>
+
+      <h3>Nome completo:</h3>
+      <p>Seu nome aqui</p>
+
+      <h3>Idade:</h3>
+      <p>18 anos</p>
+
+      <h3>Data de nascimento:</h3>
+      <input type="date">
+
+      <h3>Telefone:</h3>
+      <input type="tel">
+
+      <h3>Email:</h3>
+      <input type="email">
+
+      <h3>Localização:</h3>
+      <p>Uberaba - Minas Gerais</p>
+    </section>
+
+    <!-- OBJETIVO -->
+    <section>
+      <h2>Objetivo Profissional</h2>
+      <p>
+        Desejo iniciar na área da programação e me tornar desenvolvedor web frontend.
+      </p>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section>
+      <h2>Formação Acadêmica</h2>
+
+      <h3>Ensino Médio</h3>
+      <p>Uniube - Conclusão: 2030</p>
+
+      <h3>Curso Superior Pretendido</h3>
+      <p>Designer grafico</p>
+
+      <h3>Pós-graduação</h3>
+      <p>Especialização / Mestrado em área de tecnologia</p>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section>
+      <h2>Habilidades</h2>
+
+      <div class="grid checklist">
+
+        <p>Comunicação <input type="checkbox"></p>
+        <p>Trabalho em equipe <input type="checkbox"></p>
+        <p>Liderança <input type="checkbox"></p>
+        <p>Criatividade <input type="checkbox"></p>
+        <p>Informática básica <input type="checkbox"></p>
+        <p>Programação <input type="checkbox"></p>
+        <p>Design <input type="checkbox"></p>
+        <p>Redes sociais <input type="checkbox"></p>
+        <p>Inglês <input type="checkbox"></p>
+        <p>Espanhol <input type="checkbox"></p>
+
+      </div>
+      <h3>Outras habilidades</h3>
+      <p>Criação de jogos e projetos digitais</p>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section>
+      <h2>Experiência</h2>
+
+      <h3>Função:</h3>
+      <p>---</p>
+
+      <h3>Local:</h3>
+      <p>---</p>
+
+      <h3>Período:</h3>
+      <p>4 anos</p>
+
+      <h3>Atividades realizadas:</h3>
+      <p></p>
+    </section>
+
+   
+    <section>
+      <h2>Projetos</h2>
+
+      <h3>Participação em projetos</h3>
+      <p>---</p>
+    </section>
+
+    
+    <section>
+      <h2>Idiomas</h2>
+
+      <p>Português - Básico / Intermediário / Avançado</p>
+      <p>Inglês - Básico / Intermediário / Avançado</p>
+      <p>Espanhol - Básico / Intermediário / Avançado</p>
+    </section>
+
+    <!-- INFORMAÇÕES -->
+    <section>
+      <h2>Informações Adicionais</h2>
+
+      <ul>
+        <li>Participação em olimpíadas</li>
+        <li>Certificados</li>
+        <li>Projetos escolares</li>
+        <li>Trabalho voluntário</li>
+        <li>Habilidades tecnológicas</li>
+        <li>Objetivos futuros</li>
+      </ul>
+    </section>
+
+    
+    <section>
+      <h2>Frase Profissional</h2>
+      <p>"A prática constante transforma aprendizado em carreira."</p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 - Currículo Profissional
+  </footer>
+
+
+
+
+
+
+
+
+</body>
+</html>
