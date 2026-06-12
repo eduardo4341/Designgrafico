@@ -1,292 +1,309 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página inicial</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículo - Design Gráfico e UI/UX</title>
 
- <header>
+<style>
 
-  <nav style="margin-top:20px; margin-left: 20px; font-size: 25px;">
-    <ul class="menu">
-  <li><a href="profissao.html" target="_blank">profissão</a></li>
-   <li><a href="trabalho.html" target="_blank">trabalho</a></li>
-   <li><a href="curiosidades.html" target="_blank">curiosidades</a></li>
-   <li><a href="area.html" target="_blank">area</a></li>
-   <li><a href="curso.html" target="_blank">curso</a></li>
-   <li><a href="contato.html" target="_blank">contato</a></li>
-   <li><a href="curriculo.html" target="_blank">curriculo</a></li>
+:root{
+  --primary:#8b5e3c;
+  --secondary:#3b2f2f;
+  --accent:#d4a373;
+  --bg:#f6efe9;
+  --card:#ffffff;
+  --text:#3b2f2f;
+}
 
-   <a href="area.html"></a>
-   <a href="curiosidade.html"></a>
-   <a href="contato.html"></a>
-   <a href="profissao.html"></a>
-   <a href="trabalho.html"></a>
-   <a href="curso.html"></a>
-   <a href="curriculo.html"></a>
-    </ul>
-  </nav>
- </header>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    
-    
-   
-  
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+}
 
-  <style>
+/* MENU */
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+nav{
+  background:var(--secondary);
+  padding:15px;
+}
 
-    :root{
-      --primary:#8b5e3c;
-      --secondary:#3b2f2f;
-      --bg:#f6efe9;
-      --text:#3b2f2f;
-      --white:#ffffff;
-    }
+.menu{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+}
 
-    body{
-      font-family: Arial, Helvetica, sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.6;
-    }
+.menu a{
+  color:white;
+  text-decoration:none;
+  padding:10px 15px;
+  border-radius:8px;
+  transition:.3s;
+  font-weight:bold;
+}
 
-    header{
-      background:linear-gradient(135deg,#8b5e3c,#5c3b1e);
-      color:white;
-      text-align:center;
-      padding:60px 20px;
-    }
+.menu a:hover{
+  background:var(--accent);
+  color:var(--secondary);
+}
 
-    header h1{
-      font-size:2.5rem;
-      margin-bottom:10px;
-    }
+/* CABEÇALHO */
 
-    main{
-      max-width:1000px;
-      margin:40px auto;
-      padding:20px;
-    }
+header{
+  background:linear-gradient(135deg,#8b5e3c,#5c3b1e);
+  color:white;
+  text-align:center;
+  padding:70px 20px;
+}
 
-    section{
-      background:white;
-      padding:25px;
-      margin-bottom:20px;
-      border-radius:12px;
-      box-shadow:0 4px 10px rgba(0,0,0,0.08);
-      border-left:5px solid var(--primary);
-    }
+header h1{
+  font-size:3rem;
+  margin-bottom:10px;
+}
 
-    h2{
-      color:var(--primary);
-      margin-bottom:15px;
-    }
+header p{
+  font-size:1.1rem;
+}
 
-    h3{
-      margin-top:10px;
-      color:var(--secondary);
-    }
+/* CONTEÚDO */
 
-    p{
-      margin-bottom:10px;
-    }
+main{
+  max-width:1100px;
+  margin:40px auto;
+  padding:20px;
+}
 
-    ul{
-      padding-left:20px;
-    }
+section{
+  background:var(--card);
+  padding:25px;
+  margin-bottom:20px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+  border-left:6px solid var(--primary);
+}
 
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:20px;
-    }
+h2{
+  color:var(--primary);
+  margin-bottom:15px;
+}
 
-    .checklist p{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      margin:5px 0;
-    }
+h3{
+  margin-top:10px;
+  color:var(--secondary);
+}
 
-    input{
-      transform:scale(1.1);
-    }
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+}
 
-    footer{
-      text-align:center;
-      background:var(--secondary);
-      color:white;
-      padding:20px;
-      margin-top:40px;
-    }
+.checklist p{
+  display:flex;
+  justify-content:space-between;
+  background:#faf7f3;
+  padding:10px;
+  border-radius:8px;
+}
 
-    /* RESPONSIVO */
-    @media(max-width:768px){
+input{
+  transform:scale(1.1);
+}
 
-      header h1{
-        font-size:1.8rem;
-      }
+ul{
+  padding-left:20px;
+}
 
-      main{
-        padding:15px;
-      }
+footer{
+  background:var(--secondary);
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
 
-      section{
-        padding:18px;
-      }
-    }
+/* RESPONSIVO */
 
-  </style>
+@media(max-width:768px){
+
+  header h1{
+    font-size:2rem;
+  }
+
+  .menu{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  main{
+    padding:15px;
+  }
+
+}
+</style>
+
 </head>
 
 <body>
 
-  <header>
-    <h1>Currículo Profissional</h1>
-    <p>Modelo de apresentação pessoal e carreira</p>
-  </header>
+<nav>
+  <ul class="menu">
+    <li><a href="profissao.html">Profissão</a></li>
+    <li><a href="trabalho.html">Trabalho</a></li>
+    <li><a href="curiosidades.html">Curiosidades</a></li>
+    <li><a href="area.html">Área</a></li>
+    <li><a href="curso.html">Curso</a></li>
+    <li><a href="contato.html">Contato</a></li>
+    <li><a href="curriculo.html">Currículo</a></li>
+  </ul>
+</nav>
 
-  <main>
+<header>
+  <h1>Currículo Profissional</h1>
+  <p>Design Gráfico • UI Design • UX Design</p>
+</header>
 
-    <!-- DADOS PESSOAIS -->
-    <section>
-      <h2>Dados Pessoais</h2>
+<main>
 
-      <h3>Nome completo:</h3>
-      <p>Seu nome aqui</p>
+<section>
+  <h2>Dados Pessoais</h2>
 
-      <h3>Idade:</h3>
-      <p>18 anos</p>
+  <h3>Nome</h3>
+  <p>Eduardo Thomé</p>
 
-      <h3>Data de nascimento:</h3>
-      <input type="date">
+  <h3>Localização</h3>
+  <p>Uberaba - Minas Gerais</p>
 
-      <h3>Telefone:</h3>
-      <input type="tel">
+  <h3>Email</h3>
+  <p>eduardo@email.com</p>
 
-      <h3>Email:</h3>
-      <input type="email">
+  <h3>Telefone</h3>
+  <p>(00) 00000-0000</p>
+</section>
 
-      <h3>Localização:</h3>
-      <p>Uberaba - Minas Gerais</p>
-    </section>
+<section>
+  <h2>Objetivo Profissional</h2>
 
-    <!-- OBJETIVO -->
-    <section>
-      <h2>Objetivo Profissional</h2>
-      <p>
-        Desejo iniciar na área da programação e me tornar desenvolvedor web frontend.
-      </p>
-    </section>
+  <p>
+    Atuar na área de Design Gráfico com foco em UI/UX Design,
+    desenvolvendo interfaces modernas, acessíveis e intuitivas
+    para websites, aplicativos e plataformas digitais.
+  </p>
+</section>
 
-    <!-- FORMAÇÃO -->
-    <section>
-      <h2>Formação Acadêmica</h2>
+<section>
+  <h2>Formação Acadêmica</h2>
 
-      <h3>Ensino Médio</h3>
-      <p>Uniube - Conclusão: 2030</p>
+  <h3>Ensino Médio</h3>
+  <p>Em andamento</p>
 
-      <h3>Curso Superior Pretendido</h3>
-      <p>Designer grafico</p>
+  <h3>Curso Superior Pretendido</h3>
+  <p>Design Gráfico</p>
 
-      <h3>Pós-graduação</h3>
-      <p>Especialização / Mestrado em área de tecnologia</p>
-    </section>
+  <h3>Área de Especialização</h3>
+  <p>UI Design, UX Design e Desenvolvimento Front-End</p>
+</section>
 
-    <!-- HABILIDADES -->
-    <section>
-      <h2>Habilidades</h2>
+<section>
+  <h2>Habilidades</h2>
 
-      <div class="grid checklist">
+  <div class="grid checklist">
 
-        <p>Comunicação <input type="checkbox"></p>
-        <p>Trabalho em equipe <input type="checkbox"></p>
-        <p>Liderança <input type="checkbox"></p>
-        <p>Criatividade <input type="checkbox"></p>
-        <p>Informática básica <input type="checkbox"></p>
-        <p>Programação <input type="checkbox"></p>
-        <p>Design <input type="checkbox"></p>
-        <p>Redes sociais <input type="checkbox"></p>
-        <p>Inglês <input type="checkbox"></p>
-        <p>Espanhol <input type="checkbox"></p>
+    <p>Design Gráfico <input type="checkbox" checked></p>
+    <p>UI Design <input type="checkbox" checked></p>
+    <p>UX Design <input type="checkbox" checked></p>
+    <p>HTML <input type="checkbox" checked></p>
+    <p>CSS <input type="checkbox" checked></p>
+    <p>Wireframes <input type="checkbox" checked></p>
+    <p>Prototipagem <input type="checkbox" checked></p>
+    <p>Criatividade <input type="checkbox" checked></p>
+    <p>Comunicação <input type="checkbox" checked></p>
+    <p>Trabalho em Equipe <input type="checkbox" checked></p>
 
-      </div>
-      <h3>Outras habilidades</h3>
-      <p>Criação de jogos e projetos digitais</p>
-    </section>
+  </div>
+</section>
 
-    <!-- EXPERIÊNCIA -->
-    <section>
-      <h2>Experiência</h2>
+<section>
+  <h2>Área de Atuação</h2>
 
-      <h3>Função:</h3>
-      <p>---</p>
+  <p>
+    O Design Gráfico é responsável pela comunicação visual de
+    marcas, empresas e produtos. Já o UI Design trabalha na
+    criação da aparência das interfaces digitais, enquanto o
+    UX Design busca melhorar a experiência do usuário durante
+    a utilização de sites e aplicativos.
+  </p>
+</section>
 
-      <h3>Local:</h3>
-      <p>---</p>
+<section>
+  <h2>Atividades Desenvolvidas</h2>
 
-      <h3>Período:</h3>
-      <p>4 anos</p>
+  <ul>
+    <li>Criação de logotipos</li>
+    <li>Design para redes sociais</li>
+    <li>Desenvolvimento de interfaces</li>
+    <li>Criação de wireframes</li>
+    <li>Prototipagem de aplicativos</li>
+    <li>Design responsivo</li>
+    <li>Pesquisa de experiência do usuário</li>
+  </ul>
+</section>
 
-      <h3>Atividades realizadas:</h3>
-      <p></p>
-    </section>
+<section>
+  <h2>Projetos</h2>
 
-   
-    <section>
-      <h2>Projetos</h2>
+  <p>
+    Desenvolvimento de páginas web relacionadas a Design
+    Gráfico, UI Design, UX Design, carreira profissional,
+    cursos da área e portfólios digitais.
+  </p>
+</section>
 
-      <h3>Participação em projetos</h3>
-      <p>---</p>
-    </section>
+<section>
+  <h2>Idiomas</h2>
 
-    
-    <section>
-      <h2>Idiomas</h2>
+  <p>Português - Avançado</p>
+  <p>Inglês - Básico</p>
+  <p>Espanhol - Básico</p>
+</section>
 
-      <p>Português - Básico / Intermediário / Avançado</p>
-      <p>Inglês - Básico / Intermediário / Avançado</p>
-      <p>Espanhol - Básico / Intermediário / Avançado</p>
-    </section>
+<section>
+  <h2>Informações Adicionais</h2>
 
-    <!-- INFORMAÇÕES -->
-    <section>
-      <h2>Informações Adicionais</h2>
+  <ul>
+    <li>Interesse por tecnologia e design</li>
+    <li>Aprendizado contínuo em UI/UX</li>
+    <li>Criação de sites responsivos</li>
+    <li>Desenvolvimento de portfólio digital</li>
+    <li>Projetos acadêmicos e pessoais</li>
+  </ul>
+</section>
 
-      <ul>
-        <li>Participação em olimpíadas</li>
-        <li>Certificados</li>
-        <li>Projetos escolares</li>
-        <li>Trabalho voluntário</li>
-        <li>Habilidades tecnológicas</li>
-        <li>Objetivos futuros</li>
-      </ul>
-    </section>
+<section>
+  <h2>Frase Profissional</h2>
 
-    
-    <section>
-      <h2>Frase Profissional</h2>
-      <p>"A prática constante transforma aprendizado em carreira."</p>
-    </section>
+  <p>
+    "O design transforma ideias em experiências que conectam
+    pessoas e tecnologia."
+  </p>
+</section>
 
-  </main>
+</main>
 
-  <footer>
-    © 2026 - Currículo Profissional
-  </footer>
-
-
-
-
-
-
-
+<footer>
+  © 2026 - Portfólio e Currículo de Design Gráfico e UI/UX
+</footer>
 
 </body>
 </html>
